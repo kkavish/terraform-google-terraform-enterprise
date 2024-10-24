@@ -64,12 +64,12 @@ output "vm_mig" {
 }
 
 output "bucket" {
-  value = module.object_storage.bucket
+  value = module.object_storage[0].bucket
 
   description = "The name of the storage bucket."
 }
 output "project" {
-  value = module.object_storage.project
+  value = module.object_storage[0].project
 
   description = "The ID of the project in which the storage bucket resides."
 }
